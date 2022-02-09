@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class = "profile_container">
+    <div class = "top_half">
+        <img src = "{{ url_for('static', filename='good_ole_davaskye.jpg') }}">
+        <h1>Davaskye DeBique</h1>
+        <p>@davaskye</p>
+        <p>Kingstown, St. Vincent</p>
+        <p>{{ date_joined }}</p>
+
+    </div>
+    <div class = "bottom_half">
+        <div class = "center">
+            <p>
+                My name is Davaskye DeBique. I have major interests in Computer Science, primarily in the fields of Cyber Security and most recently, Artificial Intelligence. 
+            </p>
+        </div>
+        <div class = "horizontal">
+            <h2>7</h2>
+            <p>Posts</p>
+            <h2>100</h2>
+            <p>Following</p>
+            <h2>250</h2>
+            <p>Followers</p>
+        </div>
+        <div class = "center">
+            <button type ="button">Follow</button>
+        </div>
+    </div>
+</div>
+{% endblock %}
